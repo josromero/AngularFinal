@@ -1,0 +1,21 @@
+form {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #7B241C;
+    border-radius: 1em;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+.azul {
+    color: #CD5C5C;
+  }

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <h1 [ngClass]="estilo">Jose Luis Romero Petla</h1>
+      <div class="card">
+        <div class="card-heder">
+          <h4 class="mt-4 text-center">Agregar nombre</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-floating mb-3">
+            <input
+              [(ngModel)]="nuevoNombre"
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Inserte un nombre"
+            />
+          </div>
+          <button class="btn btn-danger" (click)="addName()">
+            Agregar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Segunda Columna -->
+    <div class="col-md-5">
+      <ng-container *ngIf="lista.length">
+        <ul>
+          <h3>Lista de Nombres</h3>
+          <li class="h4" *ngFor="let item of lista">{{ item }}</li>
+        </ul>
+      </ng-container>
+    </div>
+  </div>
+</div>
